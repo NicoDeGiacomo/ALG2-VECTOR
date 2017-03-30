@@ -13,7 +13,7 @@ bool vector_obtener(vector_t* vector, size_t pos, int* valor){
         return false;
     }
     *valor = vector->datos[pos];
-    return 1;
+    return true;
 }
 bool vector_guardar(vector_t* vector, size_t pos, int valor){
     if (pos >= vector->tam){
